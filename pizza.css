@@ -51,6 +51,7 @@ aside{
 h4{
     text-align:center;
     font-size: smaller;
+    padding-bottom: 5px;
 }
 
 .asztal{
@@ -76,6 +77,27 @@ a {
     color:aliceblue;
     overflow: hidden;
     text-decoration: none;
-    
+    align-items: top;
     
   }
+.ajanlat{
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: black;
+    padding-top: 50px;
+  }
+
+.gombok{
+    font-size: larger;
+    background: transparent;
+    display: flex;
+    text-align: center;
+    margin-left: 625px;
+    width: 50px;
+    
+    
+}
+
+    
+
+
