@@ -69,8 +69,9 @@
     height: 400px;
     width: 250px;
     display: inline-block;
-    margin: auto;
+    margin-bottom: 300px; ;
     padding: 20px;
+    align-items:center;
 }
 #vegyeszoldseg{
     height: 250px;
@@ -83,7 +84,7 @@
     height: 250px;
     width: 300px;
     display: inline-block;
-    margin: auto;
+    margin-left:  -100px;;
     padding: 30px;
 }
 #leves{
@@ -94,9 +95,15 @@
     padding: 30px;
 }
 .balpizza{
-    float: right;
+    float: left;
+
+
 }
-h1{
-    text-align: left;
+.nyitvatartas{
+    height: 500px;
+    margin: auto;
+    background-color: #222222;
+
+
 }
 
