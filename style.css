@@ -1,15 +1,28 @@
 .header{
-    background-image: url(img/Pizzakep.jpg);
+    background-image: url(kepek/egesz.jpg);
     height: 100%;
     color: white;
     padding: 200px;
     align-items: center;
     background-position: 60%;
 }
+body{
+    margin: auto;
+    outline: auto;
+}
 .navbarjobb{
     float: right;
     color: white;
 }
+li {
+    float: right;
+  }
+  
+  a {
+    display: flex;
+    padding: 8px;
+    background-image: url(kepek/egesz.jpg);
+  }
 .tortenet{
     background-color: #222222;
     padding: 5px;
@@ -84,7 +97,6 @@
     height: 250px;
     width: 300px;
     display: inline-block;
-    margin-left:  -100px;;
     padding: 30px;
 }
 #leves{
@@ -96,6 +108,7 @@
 }
 .balpizza{
     float: left;
+    
 
 
 }
@@ -105,5 +118,9 @@
     background-color: #222222;
 
 
+}
+h3{
+    text-align: center;
+    margin-left: 550px;
 }
 
