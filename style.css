@@ -77,14 +77,14 @@ li {
     width: 420px;
     display: inline-block;
     margin: auto;
-    padding: 30px;
+    
 }
 #pecsenye{
     height: 400px;
     width: 250px;
     display: inline-block;
     margin-bottom: 300px; ;
-    padding: 20px;
+    
     align-items:center;
 }
 #vegyeszoldseg{
@@ -92,20 +92,20 @@ li {
     width: 300px;
     display: inline-block;
     margin: auto;
-    padding: 30px;
+    
 }
 #szalamispizza{
     height: 250px;
     width: 300px;
     display: inline-block;
-    padding: 30px;
+    
 }
 #leves{
     height: 200px;
     width: 250px;
     display: inline-block;
     margin: auto;
-    padding: 30px;
+    
 }
 .balpizza{
     float: left;
@@ -126,4 +126,48 @@ h3{
     margin-left: 550px;
     color: white;
 }
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background: color #222222;
+    margin:50px    ;
+  }
+  
+  .grid-item {
+    background-color: #222222;
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    font-size: 30px;
+    grid-gap: 10px;
+    padding: 10px;
 
+  }
+  
+  .item1 {
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+     grid-row-end: 2;
+    margin: auto;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item3{
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+
+    grid-row: 2;
+  }
+  .item4{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item5 {
+    grid-column: 3;
+    grid-row: 2;
+  }
