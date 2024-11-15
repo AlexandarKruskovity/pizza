@@ -11,19 +11,36 @@ body{
     outline: auto;
     background-color: #222222;
 }
-.navbarjobb{
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-image:none;
     float: right;
-    color: white;
-}
-li {
-    float: right;
+    display:flex;
   }
   
-  a {
-    display: flex;
-    padding: 8px;
-    background-image: url(kepek/egesz.jpg);
+  li {
+    float: left;
   }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+
+li {
+    float: right;
+    display:flex;
+  }
+  
+
 .tortenet{
     background-color: #222222;
     padding: 5px;
@@ -166,21 +183,30 @@ h3{
     text-align: center;
     color: white;
 }
-.ido{
-    text-align: center;
-    color: white;
-}
-.bal{
-    text-align: center;
+#szeretet{
+    text-align: right;
     color:white;
-    margin-left: 600px;
-
+    margin-right: 800px;
 
 }
-h4{
+.nyitvatartas{
     text-align: center;
-    font-weight: 200;
+    margin-left: 500px;
+    color:white;
 }
-.h5{
-    font-family: 'Times New Roman', Times, serif;
+.nyitva{
+    text-align: left;
+    margin-left: 500px;
+    color:gray;
+    display:block;
+    margin-right: 300px;
+    
+}
+.footer{
+    height:auto;
+    background-color:black;
+}
+#probald{
+    text-align: right;
+    float: right;
 }
