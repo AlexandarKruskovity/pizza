@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzéria</title>
@@ -8,7 +9,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>PIZZÉRIA</h1>
+        <h1 class="cim">PIZZÉRIA</h1>
         <ul>
             <li><a href="#kezdolap">Kezdőlap</a></li>
             <li><a href="#Menü">Menü</a></li>
@@ -59,18 +60,23 @@
         </div>
     </div>
    
-      <div class="grid-container">
-        <div class="grid-item item1">
-            <img src="kepek/egesz.jpg" alt="Pizzakep" id="pizza"> pizza</div>
-        <div class="grid-item item2"> 
-            <img src="kepek/hus.jpg" alt="Vörösboros marhapecsenye" id="pecsenye">Vörösboros marhapecsenye</div>
-        <div class="grid-item item3"> 
-             <img src="kepek/gombas.jpg"alt="Pizza" id="szalamispizza">Pizza</div>
-        <div class="grid-item item4"> 
-           <img src="kepek/ragu.jpg" alt="Vegyes zöldségsaláta olivával" id="vegyeszoldseg">Vegyes zöldségsaláta olivával</div>
-        <div class="grid-item item5">
-            <img src="kepek/leves.jpg" alt="Előétel" id="leves">Előétel</div>
-      </div>
+    <div class="gallery">
+        <figure class="gallery_item gallery__item--1">
+            <img src="kepek/egesz.jpg" alt="Pizzakep" class="gallery__img">
+        </figure>
+        <figure class="gallery_item gallery__item--2">
+            <img src="kepek/hus.jpg" alt="Vörörsboros marhapecseny" class="gallery__img">
+        </figure>
+        <figure class="gallery_item gallery__item--3">
+            <img src="kepek/ragu.jpg" alt="Vegyes zöldségsaláta olivával" class="gallery__img">
+        </figure>
+        <figure class="gallery_item gallery__item--4">
+            <img src="kepek/gombas.jpg" alt="Pizza" class="gallery__img">
+        </figure>
+        <figure class="gallery_item gallery__item--5">
+            <img src="kepek/leves.jpg" alt="Előétel" class="gallery__img" >
+        </figure>
+    </div>
       
       
     <footer>

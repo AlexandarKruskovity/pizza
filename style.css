@@ -7,6 +7,11 @@
     background-position: 60%;
     
 }
+.cim{
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
 body{
     margin: auto;
     outline: auto;
@@ -95,7 +100,7 @@ li {
 }
 #pizza{
     height: 300px;
-    width: 420px;
+    width: 540px;
     display: inline-block;
     margin: auto;
    
@@ -118,7 +123,8 @@ li {
 #szalamispizza{
     height: 250px;
     width: 300px;
-    display: inline-block;
+    display: grid;
+    float: right;
     
 }
 #leves{
@@ -138,45 +144,54 @@ li {
     margin:50px    ;
   }
   
-  .grid-item {
-    background-color: #222222;
-    grid-template-columns: repeat(0, 100px);
-    grid-auto-rows: minmax(15px,auto);
-    display:grid ;
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  .item1 {
-    
-    grid-column: 2 / 3;
-    grid-row: 1/2 ;
-    
-    
-    
-    
-  }
-  
-  .item2 {
-    grid-column: 3/4;
-    grid-row: 1 / span 3;
-
-    
-   
-  }
-  
-  .item3{
-    grid-column: 2 ;
-    grid-row: 2 ;
-  }
-  .item4{
-    grid-column: 1/2;
-    grid-row: 2;
-    
-  }
-  .item5 {
-    grid-column: 3;
-    grid-row: 2;
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 20px;
+    color: white;
+    padding-left: 100px;
+    padding-right:100px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    margin: 0;
+}
+.gallery__item--2{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin: 0;
+}
+.gallery__item--3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    margin: 0;
+}
+.gallery__item--4{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    margin: 0;
+}
+.gallery__item--5{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    margin: 0;
     
   }
   .nyitvatartas{
@@ -222,14 +237,44 @@ h3{
 }
 .hr{
  align-items:  center;
-  margin-right: 200px;
+  margin-right: 400px;
   color:gray
 }
 .k1{
   color: white;
   position: absolute;
   left: 420px;
-  bottom: 100
-px;
+  bottom: 100px;
+}
+
+@media only screen and (max-width: 740px) {
+  div {
+      display: block;
+    
+  }
+  
+      
+
+  
+  .tortenet{
+      width:100%;
+      display: block;
+      float: left;
+
+
+  }
+  .menu{
+      width: 100%;
+      display: block;
+      margin: auto;
+      float:left
+  }
+  .gallery{
+      width: 90%;
+      margin: auto;
+      display: block;
+      
+  }
+  
 }
 
