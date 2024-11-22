@@ -43,7 +43,6 @@ ul {
   }
   
 
-
 li {
     float: right;
     display:flex;
@@ -152,6 +151,7 @@ li {
     color: white;
     padding-left: 100px;
     padding-right:100px;
+    
 }
 .gallery__img {
     width: 100%;
@@ -246,35 +246,56 @@ h3{
   left: 420px;
   bottom: 100px;
 }
-
-@media only screen and (max-width: 740px) {
-  div {
-      display: block;
+* {
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 860px) {
+    div {
+        display: flex;
+      
+    }
     
+        
+
+    
+    #tartalom{
+        width:100%;
+        display: block;
+        float: left;
+
+
+    }
+    #menu{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .tablazat{
+        width: 90%;
+        float: left;
+        margin: auto;
+        display: block;
+        
+    }
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
   }
   
-      
-
-  
-  .tortenet{
-      width:100%;
-      display: block;
-      float: left;
-
-
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
-  .menu{
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
       width: 100%;
-      display: block;
-      margin: auto;
-      float:left
-  }
-  .gallery{
-      width: 90%;
-      margin: auto;
-      display: block;
-      
-  }
-  
-}
-
+    }
+}  
