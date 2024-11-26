@@ -250,19 +250,29 @@ h3{
     box-sizing: border-box;
   }
   
-  @media only screen and (max-width: 860px) {
+  @media only screen and (max-width: 500px) {
     div {
-        display: flex;
+        display: block;
       
     }
     
+    #balo{
+        text-align: right;
+        margin-left:0px
+    }
+    #jobbo{
+        height: auto;
+        width: auto;
+        float: left;  
         
+        text-align: left;
+    }
 
     
-    #tartalom{
+    #tortenet{
         width:100%;
         display: block;
-        float: left;
+        
 
 
     }
@@ -271,31 +281,46 @@ h3{
         display: block;
         margin: auto;
     }
-    .tablazat{
+    .gombok{
+        float:left;
+    }
+    .gallery{
         width: 90%;
         float: left;
         margin: auto;
-        display: block;
+        display: flex ;
         
     }
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  @media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      width: 100%;
+    .specialitasok{
+        width: 100%;
+        float: left;
+        margin:auto;
+       
     }
-}  
+    .szeretet{
+        width: 100%;
+        float: left;
+        margin:auto;
+        
+    }
+    .asztal{
+        width: 100%;
+        float: left;
+        margin:auto;
+        
+    }
+    .nyitva{
+        width: 100%;
+        float: left;
+        margin:auto;
+        
+    }
+    .nyitvatartas{
+        width: 100%;
+        float: left;
+        margin:auto;
+        
+
+    }
+   
+  } 
