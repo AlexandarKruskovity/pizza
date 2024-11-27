@@ -194,28 +194,25 @@ li {
     margin: 0;
     
   }
-  .nyitvatartas{
-    height: 500px;
-    margin: auto;
-    background-color: #222222;
-    color: white;
 
 
-}
+
+
 h3{
     text-align: center;
     color: white;
 }
 #szeretet{
-    text-align: right;
+    text-align: left;
     color:white;
-    margin-right: 800px;
+    margin-left: 50px;
+    
 
 }
 .nyitvatartas{
     text-align: center;
     margin-left: 500px;
-    color:white;
+    color:gray;
 }
 .nyitva{
     text-align: left;
@@ -235,92 +232,196 @@ h3{
   float: right;
   margin-left: 750px;
 }
-.hr{
- align-items:  center;
-  margin-right: 400px;
-  color:gray
-}
-.k1{
-  color: white;
-  position: absolute;
-  left: 420px;
-  bottom: 100px;
-}
-* {
-    box-sizing: border-box;
-  }
+
+
+
   
-  @media only screen and (max-width: 500px) {
-    div {
-        display: block;
-      
+  @media only screen and (max-width: 900px) {
+    .div {
+        padding: 5px;
+      display: block;
+      position: relative;
     }
     
     #balo{
         text-align: right;
-        margin-left:0px
+        padding: 5px;
+        position: relative;
     }
     #jobbo{
-        height: auto;
+        height: 300px;
         width: auto;
         float: left;  
-        
+        position: relative;
         text-align: left;
     }
 
     
     #tortenet{
         width:100%;
-        display: block;
-        
-
+        display: flex;
+        background-color: #222222;
+        position: relative;
 
     }
     #menu{
-        width: 100%;
+        
         display: block;
         margin: auto;
+        padding: 5px;
+        background-color: black;
+        float: left;
+        position: relative;
     }
     .gombok{
         float:left;
+        display: block;
+        position: relative;
     }
     .gallery{
-        width: 90%;
+        
         float: left;
         margin: auto;
-        display: flex ;
         
+        position: relative;
     }
     .specialitasok{
         width: 100%;
         float: left;
         margin:auto;
-       
+        position: relative;
     }
     .szeretet{
-        width: 100%;
-        float: left;
-        margin:auto;
         
+        text-align: left;
+        margin-left: 5px;
+        position: relative;
+
     }
     .asztal{
         width: 100%;
-        float: left;
+        float: right;
         margin:auto;
-        
+        position: relative;
     }
     .nyitva{
         width: 100%;
-        float: left;
+        text-align: center;
         margin:auto;
-        
+        align-items: center;
+        position: relative;
     }
     .nyitvatartas{
         width: 100%;
         float: left;
         margin:auto;
+        position: relative;
         
 
     }
+    .h2{
+        float: left;
+    }
+    .hr{
+        float: left;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        display: block;
+    }
+    
    
   } 
+ 
+  @media only screen and (max-width: 500px){
+    
+    .div {
+        padding: 5px;
+      display: block;
+      position: relative;
+    }
+    
+    #balo{
+        text-align: right;
+        padding: 5px;
+        position: relative;
+    }
+    #jobbo{
+        height: 300px;
+        width: auto;
+        float: left;  
+        position: relative;
+        text-align: left;
+    }
+
+    
+    #tortenet{
+        width:100%;
+        display: flex;
+        background-color: #222222;
+        position: relative;
+        float: right;
+
+    }
+    #menu{
+        
+        display: flex;
+        margin: auto;
+        padding: 5px;
+        background-color: black;
+        float: left;
+        position: relative;
+    }
+    .gombok{
+        
+        display: inline-block;
+        position: relative;
+    }
+    .gallery{
+        
+        float: left;
+        margin: auto;
+        display: block ;
+        position: relative;
+    }
+    .szeretet{
+        float: left;
+        text-align: center;
+    }
+    .specialitasok{
+        width: 100%;
+        float: left;
+        margin:auto;
+        position: relative;
+    }
+   
+    .asztal{
+        width: 100%;
+        float: left;
+        margin:auto;
+        position: relative;
+    }
+    .nyitva{
+        width: 100%;
+        float: left;
+        margin:auto;
+        align-items: center;
+        position: relative;
+    }
+    .nyitvatartas{
+        width: 100%;
+        float: left;
+        margin:auto;
+        position: relative;
+        
+
+    }
+    .h2{
+        float: left;
+    }
+    .hr{
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+  }
