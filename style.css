@@ -64,7 +64,7 @@ li {
     padding-left: 10% ;
     padding-right: 10%;
 }
-.gombok{
+.gpiz{
     align-items: center;
     background-color: black;
     border: 1px solid white;
@@ -74,8 +74,37 @@ li {
     font-size: 13px;
     font-weight: 600;
     height: 48px;
-    padding: 0 17px;
-    display: inline-block;
+    padding:  17px;
+   display:  inline-block;
+   margin-right: 100px;
+}
+.gmen{
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    height: 48px;
+    padding:  17px;
+   display:  inline-block;
+   margin-right: 100px;
+}
+.gita{
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    height: 48px;
+    padding:  17px;
+   display:  inline-block;
+   margin-right: 100px;
 }
 .specialitasok{
     background-color: #222222;
@@ -205,21 +234,23 @@ h3{
 #szeretet{
     text-align: left;
     color:white;
-    margin-left: 50px;
+    margin-left: 250px;
     
 
 }
 .nyitvatartas{
+    margin-top:10px;
+    align-items: center;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 100px;
     color:gray;
 }
 .nyitva{
     text-align: left;
-    margin-left: 500px;
+    margin-left: 400px;
     color:gray;
     display:block;
-    margin-right: 300px;
+    margin-right: 400px;
     
 }
 .footer{
@@ -238,14 +269,13 @@ h3{
   
   @media only screen and (max-width: 900px) {
     .div {
-        padding: 5px;
+        
       display: block;
       position: relative;
     }
     
     #balo{
         text-align: right;
-        padding: 5px;
         position: relative;
     }
     #jobbo{
@@ -258,7 +288,7 @@ h3{
 
     
     #tortenet{
-        width:100%;
+        
         display: flex;
         background-color: #222222;
         position: relative;
@@ -268,16 +298,11 @@ h3{
         
         display: block;
         margin: auto;
-        padding: 5px;
-        background-color: black;
+        background-color: #222222;
         float: left;
         position: relative;
     }
-    .gombok{
-        float:left;
-        display: block;
-        position: relative;
-    }
+   
     .gallery{
         
         float: left;
@@ -286,7 +311,6 @@ h3{
         position: relative;
     }
     .specialitasok{
-        width: 100%;
         float: left;
         margin:auto;
         position: relative;
@@ -298,21 +322,16 @@ h3{
         position: relative;
 
     }
-    .asztal{
-        width: 100%;
-        float: right;
-        margin:auto;
-        position: relative;
-    }
+    
     .nyitva{
-        width: 100%;
+        
         text-align: center;
         margin:auto;
         align-items: center;
         position: relative;
     }
     .nyitvatartas{
-        width: 100%;
+        
         float: left;
         margin:auto;
         position: relative;
@@ -336,46 +355,45 @@ h3{
   @media only screen and (max-width: 500px){
     
     .div {
-        padding: 5px;
+        
       display: block;
       position: relative;
     }
     
     #balo{
         text-align: right;
-        padding: 5px;
+        
         position: relative;
     }
     #jobbo{
         height: 300px;
         width: auto;
-        float: left;  
+        float: right;  
         position: relative;
-        text-align: left;
+        text-align: right;
     }
 
     
-    #tortenet{
-        width:100%;
-        display: flex;
-        background-color: #222222;
+    .tortenet{
         position: relative;
-        float: right;
-
+        height: auto;
+        text-align: center;
     }
-    #menu{
+    .menu{
         
-        display: flex;
-        margin: auto;
-        padding: 5px;
-        background-color: black;
-        float: left;
+        height: auto;
+        
+        text-align:left;
         position: relative;
+
     }
     .gombok{
         
-        display: inline-block;
+        float: left;
+        margin: auto;
+        display: block ;
         position: relative;
+        overflow-x:hidden ;
     }
     .gallery{
         
@@ -383,37 +401,43 @@ h3{
         margin: auto;
         display: block ;
         position: relative;
+        overflow-x:hidden ;
     }
     .szeretet{
         float: left;
         text-align: center;
+        overflow-x:hidden ;
     }
     .specialitasok{
-        width: 100%;
+        
         float: left;
-        margin:auto;
-        position: relative;
+        display: block;
+        text-align: left;
+        overflow-x:hidden ;
     }
    
     .asztal{
-        width: 100%;
+        
         float: left;
         margin:auto;
         position: relative;
+        overflow-x:hidden ;
     }
     .nyitva{
-        width: 100%;
+        
         float: left;
         margin:auto;
         align-items: center;
         position: relative;
+        overflow-x:hidden ;
     }
     .nyitvatartas{
-        width: 100%;
-        float: left;
+        
+        float: right;
+        text-align: center;
         margin:auto;
         position: relative;
-        
+        overflow-x:hidden ;
 
     }
     .h2{
