@@ -123,7 +123,7 @@ li {
 #balo{
     float: left;
     text-align: right;
-    margin-left: 15%;
+    margin-left: 10%;
     
 }
 #pizza{
@@ -231,77 +231,110 @@ h3{
     text-align: center;
     color: white;
 }
-#szeretet{
-    text-align: left;
-    color:white;
-    margin-left: 250px;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: rgb(207, 207, 207);
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    padding-top: 2%;
+    }
     
-
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .div2 { grid-area: 1 / 3 / 9 / 5; }
+    .div3 { grid-area: 1 / 5 / 4 / 7; }
+.div2{
+    width: 90%;
 }
-.nyitvatartas{
-    margin-top:10px;
-    align-items: center;
+.div1{
+    text-align: right;
+    padding-right: 10%;
+}
+.bottm_center{
+    color: white;
+    position: relative;
     text-align: center;
-    margin-left: 100px;
-    color:gray;
-}
-.nyitva{
-    text-align: left;
-    margin-left: 400px;
-    color:gray;
-    display:block;
-    margin-right: 400px;
+    font-size: 15px;
+    bottom: 10%;
     
 }
-.footer{
-    height:auto;
-    background-color:black;
-
+.bottm_center1{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    bottom: 20%;
+    
 }
-.asztal{
-  text-align:left;
-  float: right;
-  margin-left: 750px;
+.bottm_center2{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    bottom: 20%;
+    
+}
+.bottm_center3{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    bottom: 25%;
+    
+}
+footer{
+    background-color: black;
+    margin: auto;
+    padding: 5px;
+    color: grey;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
 
   
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     .div {
-        
-      display: block;
-      position: relative;
-    }
-    
-    #balo{
-        text-align: right;
-        position: relative;
-    }
-    #jobbo{
-        height: 300px;
-        width: auto;
-        float: left;  
-        position: relative;
-        text-align: left;
-    }
-
-    
-    #tortenet{
-        
+            
         display: flex;
-        background-color: #222222;
         position: relative;
-
-    }
-    #menu{
-        
-        display: block;
-        margin: auto;
-        background-color: #222222;
-        float: left;
-        position: relative;
-    }
+      }
+      
+      #balo{
+          float:left;
+          text-align: center;
+          position: relative;
+      }
+      #jobbo{
+        text-align: center;
+          float: right;  
+          position: relative;
+      }
+  
+      
+      .tortenet{
+        text-align: center;
+          position: relative;
+          background-color: #222222;
+          margin-bottom: 150px;
+          text-align: left;
+      }
+      .menu{
+        text-align: center;
+          position: relative;
+          float: left;
+          text-align: left;
+          
+      
+      }
    
     .gallery{
         
@@ -310,33 +343,14 @@ h3{
         
         position: relative;
     }
-    .specialitasok{
+    .parent{
         float: left;
-        margin:auto;
-        position: relative;
-    }
-    .szeretet{
-        
-        text-align: left;
-        margin-left: 5px;
         position: relative;
 
     }
-    
-    .nyitva{
-        
-        text-align: center;
-        margin:auto;
-        align-items: center;
-        position: relative;
-    }
-    .nyitvatartas{
-        
+    .footer{
         float: left;
-        margin:auto;
         position: relative;
-        
-
     }
     .h2{
         float: left;
@@ -348,104 +362,71 @@ h3{
         align-items: center;
         display: block;
     }
+}
     
-   
-  } 
+ @media only screen and (max-width: 600px){
+    
+        .div {
+            
+          display: flex;
+          position: relative;
+        }
+        
+        #balo{
+            float: left;
+            position: relative;
+        }
+        #jobbo{
+            float: right;  
+            position: relative;
+        }
+    
+        
+        .tortenet{
+            position: relative;
+            background-color: #222222;
+            margin-bottom: 150px;
+            text-align: left;
+        }
+        .menu{
+            position: relative;
+            float: left;
+            text-align: left;
+            
+        
+        }
+        .gpiz{
+            position: relative;
+            float: left;
+            align-items: center;
+        }
+        .gmen{
+            position: relative;
+            float: left;
+            align-items: center;
+        }
+        .gita{
+            position: relative;
+            float: left;
+            align-items: center;
+            display: flex;
+        }
+        .gallery{
+            
+            float: left;
+            margin: auto;
+            display: block ;
+            position: relative;
+            overflow-x:hidden ;
+        }
+        .parent{
+            display: flex;
+        }
+        .div3{
+            display: flex;
+            text-align: center;
+            float: left;
+        }
+    }
  
-  @media only screen and (max-width: 500px){
-    
-    .div {
-        
-      display: block;
-      position: relative;
-    }
-    
-    #balo{
-        text-align: right;
-        
-        position: relative;
-    }
-    #jobbo{
-        height: 300px;
-        width: auto;
-        float: right;  
-        position: relative;
-        text-align: right;
-    }
-
-    
-    .tortenet{
-        position: relative;
-        height: auto;
-        text-align: center;
-    }
-    .menu{
-        
-        height: auto;
-        
-        text-align:left;
-        position: relative;
-
-    }
-    .gombok{
-        
-        float: left;
-        margin: auto;
-        display: block ;
-        position: relative;
-        overflow-x:hidden ;
-    }
-    .gallery{
-        
-        float: left;
-        margin: auto;
-        display: block ;
-        position: relative;
-        overflow-x:hidden ;
-    }
-    .szeretet{
-        float: left;
-        text-align: center;
-        overflow-x:hidden ;
-    }
-    .specialitasok{
-        
-        float: left;
-        display: block;
-        text-align: left;
-        overflow-x:hidden ;
-    }
-   
-    .asztal{
-        
-        float: left;
-        margin:auto;
-        position: relative;
-        overflow-x:hidden ;
-    }
-    .nyitva{
-        
-        float: left;
-        margin:auto;
-        align-items: center;
-        position: relative;
-        overflow-x:hidden ;
-    }
-    .nyitvatartas{
-        
-        float: right;
-        text-align: center;
-        margin:auto;
-        position: relative;
-        overflow-x:hidden ;
-
-    }
-    .h2{
-        float: left;
-    }
-    .hr{
-        text-align: center;
-        position: relative;
-        display: block;
-    }
-  }
+ 
