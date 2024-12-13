@@ -17,38 +17,41 @@ body{
     outline: auto;
     background-color: #222222;
 }
-ul {
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    overflow: hidden;
-    background-image:none;
-    float: right;
-    display:flex;
-    position: absolute;
-  right: 20px;
-  top: 15px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
+
+
+  #check:checked ~ .nav-mobile {
     display: block;
+   }
+   
+   
+   .checkbtn {
+    font-size: 1.5rem;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-
-li {
-    float: right;
-    display:flex;
-  }
-  
-
+    cursor: pointer;
+   }       
+     nav {
+    padding: 1.5rem 2rem;
+    color: #fff;
+    position:absolute;
+    top:15px;
+    right:30px;
+   }
+   .nav-mobile {
+    display: none;
+   }
+  .nav-mobile {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #222831;
+    z-index: 1;
+    width: 200px;
+   }
+   .nav-mobile a {
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: block;
+   }
 .tortenet{
     background-color: #222222;
     padding: 5px;
@@ -326,12 +329,15 @@ footer{
           background-color: #222222;
           margin-bottom: 150px;
           text-align: left;
+          display:block;
+          margin:0.4em auto;
       }
       .menu{
         text-align: center;
           position: relative;
           float: left;
-          text-align: left;
+          display:block;
+          margin:0.4em auto;
           
       
       }
@@ -362,23 +368,47 @@ footer{
         align-items: center;
         display: block;
     }
+    .nav{
+        font-size: medium;
+    }
 }
     
  @media only screen and (max-width: 600px){
+
+
     
+        .checkbtn {
+        display: block;
+        font-size: medium;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        float: right;
+        }
+       .nav-mobile {
+        top: 160px;
+        width: 100%;
+        }
+       .nav-mobile a {
+        font-size: medium;
+        display: block;
+        
+       }
         .div {
             
           display: flex;
           position: relative;
         }
-        
+       
         #balo{
             float: left;
             position: relative;
+            display: block;
         }
         #jobbo{
             float: right;  
             position: relative;
+            display: block;
         }
     
         
@@ -392,25 +422,35 @@ footer{
             position: relative;
             float: left;
             text-align: left;
+            align-items: center;
             
         
         }
         .gpiz{
-            position: relative;
             float: left;
-            align-items: center;
+            display:block;
+            margin:0.4em auto;
+            height: auto;
+            
+           
+            
         }
         .gmen{
-            position: relative;
             float: left;
-            align-items: center;
+            display:block;
+            margin:0.4em auto;
+            height: auto;
+            
+            
         }
         .gita{
-            position: relative;
             float: left;
-            align-items: center;
-            display: flex;
+            display:block;
+            margin:0.4em auto;
+            height: auto;
+        
         }
+       
         .gallery{
             
             float: left;
@@ -420,13 +460,18 @@ footer{
             overflow-x:hidden ;
         }
         .parent{
-            display: flex;
+            display: block;
+
         }
         .div3{
-            display: flex;
+            display: block;
             text-align: center;
             float: left;
         }
+        .div1{
+            display: block;
+        }
+     
     }
  
  
