@@ -1,12 +1,4 @@
-.header{
-    background-image: url(kepek/egesz.jpg);
-    height: 100%;
-    color: white;
-    padding: 200px;
-    align-items: center;
-    background-position: 60%;
-    
-}
+
 .cim{
   position: absolute;
   left: 20px;
@@ -17,41 +9,26 @@ body{
     outline: auto;
     background-color: #222222;
 }
-
-
-  #check:checked ~ .nav-mobile {
-    display: block;
-   }
-   
-   
-   .checkbtn {
-    font-size: 1.5rem;
+.parent2 {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 700px;
+    grid-row-gap: 0px;
+    background-image: url(kepek/egesz.jpg);
     color: white;
-    cursor: pointer;
-   }       
-     nav {
-    padding: 1.5rem 2rem;
-    color: #fff;
-    position:absolute;
-    top:15px;
-    right:30px;
-   }
-   .nav-mobile {
-    display: none;
-   }
-  .nav-mobile {
-    position: absolute;
-    top: 4.5rem;
-    left: 0;
-    background: #222831;
-    z-index: 1;
-    width: 200px;
-   }
-   .nav-mobile a {
-    color: #fff;
-    padding: 1rem 1.5rem;
-    display: block;
-   }
+    align-items: center;
+    background-position: 40%;
+    height:100%;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 4 / 2 / 6; }
+.navbarjobb{
+    color: white;
+}
+
+
 .tortenet{
     background-color: #222222;
     padding: 5px;
@@ -309,8 +286,20 @@ footer{
             
         display: flex;
         position: relative;
+        width: 100%;
       }
-      
+     .parent2{
+        
+        width: 100%;
+        height: 100%;
+
+     }
+      .navbarjobb{
+       margin: auto;
+       width: auto;
+       align-items:center ;
+
+      }
       #balo{
           float:left;
           text-align: center;
@@ -373,33 +362,24 @@ footer{
     }
 }
     
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 400px){
 
 
     
-        .checkbtn {
-        display: block;
-        font-size: medium;
-        position: absolute;
-        top: 30px;
-        left: 40px;
-        float: right;
-        }
-       .nav-mobile {
-        top: 160px;
-        width: 100%;
-        }
-       .nav-mobile a {
-        font-size: medium;
-        display: block;
-        
+       
+       .header{
+        width: auto;
        }
         .div {
             
           display: flex;
           position: relative;
         }
-       
+        .navbarjobb{
+            margin: auto;
+            width: auto;
+            align-items:center ;
+        }
         #balo{
             float: left;
             position: relative;
@@ -471,6 +451,10 @@ footer{
         .div1{
             display: block;
         }
+     
+    }
+    @media  only screen and(max-width:350px)
+    {
      
     }
  
