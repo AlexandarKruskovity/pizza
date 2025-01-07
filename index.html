@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzéria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="font-family: Helvetica, sans-serif; font-weight: lighter;">
     <div class="parent2" >
@@ -18,86 +17,63 @@
             <a  style="color: rgb(207, 207, 207);">KAPCSOLAT </a>
         </div>
     </div>
-          
-    </div>
-    
     <div class="tortenet">
         <div id="balo">
-        <h2>PIADNA PIZZÉRIA</h2>
-        <p style="color: gray;">Történetük</p>
+        <h2 id="piadina2">PIADNA PIZZÉRIA</h2>
+        <p style="color: gray;" id="tort">Történetük</p>
         </div>
         <div id="jobbo">
-        <p style="color: gray;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-             Nisi sit laborum nesciunt doloribus ex corrupti reprehenderit adipisci architecto
-              iure necessitatibus suscipit commodi velit mollitia, consectetur illo et, at,
-               nemo temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Assumenda magnam, consectetur dicta, asperiores ducimus vel maiores, incidunt
-                 unde suscipit eveniet quaerat at corporis dolores enim neque animi quam deleniti
-                  totam. </p>
+        <p style="color: rgb(207, 207, 207);">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi sit laborum nesciunt doloribus ex corrupti reprehenderit adipisci architecto iure necessitatibus suscipit commodi velit mollitia, consectetur illo et, at, nemo temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, adipisci perspiciatis? Maiores velit ad commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cum consectetur quas commodi ipsa es.</p>
         <p><strong>FOGLALJ ASZTALT: +36-67-632-456</strong></p>
         </div>
     </div>
     <div class="menu">
-        <h2>--MENÜ--</h2>
-        <p style="color: gray;">Ajanlataink</p>
-        <p>Itt kezdődhet szöveged. Kattints ide, és kezdheted az írást. 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum aspernatur 
-            totam quaerat doloribus voluptatibus maiores temporibus, deserunt commodi
-             magnam explicabo fugiat, molestiae ratione vitae distinctio ab accusamus? 
-             In, explicabo sit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Est nemo laudantium possimus dolorem nulla eos saepe modi 
-             sit laboriosam nesciunt tempora perspiciatis reiciendis officia qui,
-              rem quia harum animi? Molestias?</p>
-        <button class="gpiz">PIZZA</button>
-        <button class="gmen">MENÜ</button>
-        <button class="gita">ITALOK</button>
+        <h2>-MENÜ-</h2>
+        <p style="color: rgb(207, 207, 207);">Ajanlataink</p>
+        <p id="menus" style="color: rgb(207, 207, 207); ">Itt kezdődhet szöveged. Kattints ide, és kezdheted az írást. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Cum aspernatur totam quaerat doloribus voluptatibus maiores temporibus, deserunt commodi magnam explicabo fugiat, <br> molestiae ratione vitae distinctio ab accusamus? In, explicabo sit.</p>
+        <br>
+        <button class="gombok">PIZZA</button>
+        <button class="gombok">MENÜ</button>
+        <button class="gombok">ITALOK</button>
     </div>
     <div class="specialitasok">
-        <h2>--SPECIALITÁSAINK--</h2>
+        <h2>-SPECIALITÁSAINK-</h2>
         <p style="color: grey;">Az ízek tökéletes összhangja</p>
-          
-            </div>
+        <br>
+        <div class="gallery">
+            <figure class="gallery_item gallery__item--1">
+                <img src="kepek/egesz.jpg" alt="Pizzakep" class="gallery__img">
+                <div class="bottm_center">
+                    <p class="bottm_center"><i>Pizza</i></p>
+                </div>
+            </figure>
+            <figure class="gallery_item gallery__item--2">
+                <img src="kepek/hus.jpg" alt="Vörörsboros marhapecseny" class="gallery__img">
+                <div class="bottm_center">
+                    <p class="bottm_center4"><i>Vörörsboros marhapecseny</i></p>
+                </div>
+            </figure>
+            <figure class="gallery_item gallery__item--3">
+                <img src="kepek/ragu.jpg" alt="Vegyes zöldségsaláta olivával" class="gallery__img">
+                <div class="bottm_center1">
+                    <p class="bottm_center1"><i>Vegyes zöldségsaláta olivával</i></p>
+                </div>    
+            </figure>
+            <figure class="gallery_item gallery__item--4">
+                <img src="kepek/gombas.jpg" alt="Pizza" class="gallery__img">
+                <div class="bottm_center2">
+                    <p class="bottm_center2"><i>Pizza</i></p>
+                </div>
+            </figure>
+            <figure class="gallery_item gallery__item--5">
+                <img src="kepek/leves.jpg" alt="Előétel" class="gallery__img" >
+                <div class="bottm_center3">
+                    <p class="bottm_center3"><i>Előétel</i></p>
+                </div>
+            </figure>
         </div>
-    </div>
-   
-    <div class="gallery">
-        <figure class="gallery_item gallery__item--1">
-            <img src="kepek/egesz.jpg" alt="Pizzakep" class="gallery__img" >
-            <div class="bottm_center">
-                <p class="bottm_center"><i>Pizza</i></p>
-            </div>
-        </figure>
-        <figure class="gallery_item gallery__item--2">
-            <img src="kepek/hus.jpg" alt="Vörörsboros marhapecseny" class="gallery__img">
-            <div class="bottm_center">
-                <p class="bottm_center"><i>Vörörsboros marhapecseny</i></p>
-            </div>
-        </figure>
-        <figure class="gallery_item gallery__item--3">
-            <img src="kepek/ragu.jpg" alt="Vegyes zöldségsaláta olivával" class="gallery__img">
-            <div class="bottm_center1">
-                <p class="bottm_center1"><i>Vegyes zöldségsaláta olivával</i></p>
-            </div> 
-        </figure>
-        <figure class="gallery_item gallery__item--4">
-            <img src="kepek/gombas.jpg" alt="Pizza" class="gallery__img">
-            <div class="bottm_center2">
-                <p class="bottm_center2"><i>Pizza</i></p>
-            </div>
-        </figure>
-        <figure class="gallery_item gallery__item--5">
-            <img src="kepek/leves.jpg" alt="Előétel" class="gallery__img" >
-            <div class="bottm_center3">
-                <p class="bottm_center3"><i>Előétel</i></p>
-            </div>
-        </figure>
-    </div>
-      
-    
-    
-    
 
+    </div>
     <div class="parent">
         <div class="div1"> <p style="color: white;">SZERETETTEL <br> VÁRUNK</p> </div>
         <div class="div2"> <p style="color: white;">NYITVA</p>
@@ -124,7 +100,7 @@
             <p>11:00-22:00</p></div>
         <div class="div3"> <p style="color: white;">PRÓBÁLD KI FENSÉGES FENSÉGES ÉTELEINKS</p>
             <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, officiis, dicta eveniet aperiam sint soluta cum aut eaque dolorem.</p>
-            <p>FOGLALJ ASZTALT</p></div>
+            <p><a href="#"  style="color: white;">FOGLALJ ASZTALT</a></p></div>
         </div>
         <footer>
             <hr id="hr">
@@ -132,8 +108,6 @@
             <p>Az oldalt a <a href="#">Webnade</a> működteti.</p>
         </footer>
     </div> 
-    
-    
 
 </body>
 </html>
