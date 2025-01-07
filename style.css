@@ -1,13 +1,6 @@
-
-.cim{
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
 body{
-    margin: auto;
-    outline: auto;
-    background-color: #222222;
+    font-size: 100%;
+    margin: 0px;
 }
 .parent2 {
     display: grid;
@@ -19,7 +12,7 @@ body{
     color: white;
     align-items: center;
     background-position: 40%;
-    height:100%;
+    height: 600px;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -27,14 +20,19 @@ body{
 .navbarjobb{
     color: white;
 }
-
+.pizzeriabal{
+    margin: 0;
+    padding-left: 20%;
+}
 
 .tortenet{
     background-color: #222222;
     padding: 5px;
     color: white;
-    height: 200px;
-
+    height: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 .menu{
     background-color: black;
@@ -43,8 +41,10 @@ body{
     text-align: center;
     padding-left: 10% ;
     padding-right: 10%;
+    height: 300px;
+    padding-top: 3%;
 }
-.gpiz{
+.gombok{
     align-items: center;
     background-color: black;
     border: 1px solid white;
@@ -54,37 +54,10 @@ body{
     font-size: 13px;
     font-weight: 600;
     height: 48px;
-    padding:  17px;
-   display:  inline-block;
-   margin-right: 100px;
-}
-.gmen{
-    align-items: center;
-    background-color: black;
-    border: 1px solid white;
-    box-sizing: border-box;
-    color: white;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 600;
-    height: 48px;
-    padding:  17px;
-   display:  inline-block;
-   margin-right: 100px;
-}
-.gita{
-    align-items: center;
-    background-color: black;
-    border: 1px solid white;
-    box-sizing: border-box;
-    color: white;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 600;
-    height: 48px;
-    padding:  17px;
-   display:  inline-block;
-   margin-right: 100px;
+    padding: 0 17px;
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
 }
 .specialitasok{
     background-color: #222222;
@@ -93,74 +66,46 @@ body{
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
+    height: 900px;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #jobbo{
     margin-top: auto;
-    text-align: left;
-    margin-left: 40%;
-    margin-right: 10%;
+    margin-left: 35%;
+    padding-top: 20px;
 }
 #balo{
     float: left;
     text-align: right;
     margin-left: 10%;
-    
-}
-#pizza{
-    height: 300px;
-    width: 540px;
-    display: inline-block;
-    margin: auto;
-   
-    
-}
-#pecsenye{
-    height: 400px;
-    width: 250px;
-    display: inline-block;
-    margin-bottom: 300px; ;
-    align-items:center;
-}
-#vegyeszoldseg{
-    height: 250px;
-    width: 300px;
-    display: inline-block;
-    margin: auto;
-    
-}
-#szalamispizza{
-    height: 250px;
-    width: 300px;
-    display: grid;
-    float: right;
-    
-}
-#leves{
-    height: 200px;
-    width: 250px;
-    display: inline-block;
-    margin: auto;
+    padding-top: 20px;
     
 }
 .balpizza{
-    float: left;
+    float: right;
+    
 }
-.grid-container {
-    display: grid;
-    gap: 10px;
-    background: color #222222;
-    margin:50px    ;
-  }
-  
-  .gallery{
+
+footer{
+    background-color: black;
+    margin: auto;
+    padding: 5px;
+    color: grey;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+a{
+    color: grey;
+}
+
+.gallery{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 20px;
-    color: white;
-    padding-left: 100px;
-    padding-right:100px;
-    
 }
 .gallery__img {
     width: 100%;
@@ -201,16 +146,9 @@ body{
     grid-row-start: 7;
     grid-row-end: 9;
     margin: 0;
-    
-  }
-
-
-
-
-h3{
-    text-align: center;
-    color: white;
 }
+
+
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -265,41 +203,30 @@ h3{
     position: relative;
     text-align: center;
     font-size: 15px;
-    bottom: 25%;
+    bottom: 30%;
     
 }
-footer{
-    background-color: black;
-    margin: auto;
-    padding: 5px;
-    color: grey;
+.bottm_center4{
+    color: white;
+    position: relative;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 15px;
+    bottom: 10%;
 }
-
-
-
-  
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .div {
-            
+
         display: flex;
         position: relative;
         width: 100%;
       }
-     .parent2{
+     .piadina2{
         
         width: 100%;
         height: 100%;
-
      }
-      .navbarjobb{
-       margin: auto;
-       width: auto;
-       align-items:center ;
-
-      }
+     
+      
       #balo{
           float:left;
           text-align: center;
@@ -310,32 +237,50 @@ footer{
           float: right;  
           position: relative;
       }
-  
-      
+
+
       .tortenet{
+        text-align: center;
+          position: relative;
+          background-color: #222222;
+          
+          text-align: left;
+          display:block;
+          
+          margin: 0%;
+      }
+      .menu{
+        text-align: center;
+        position: relative;
+        
+        margin-bottom: 150px;
+        text-align: left;
+        display:block;
+        margin:0.4em auto;
+
+ 
+      
+      }
+      .specialitasok{
         text-align: center;
           position: relative;
           background-color: #222222;
           margin-bottom: 150px;
           text-align: left;
-          display:block;
+          display:flex;
           margin:0.4em auto;
+
       }
-      .menu{
-        text-align: center;
-          position: relative;
-          float: left;
-          display:block;
-          margin:0.4em auto;
-          
-      
-      }
-   
-    .gallery{
+    .gombok{
+        display: flex;
         
+    }
+
+    .gallery{
+
         float: left;
         margin: auto;
-        
+
         position: relative;
     }
     .parent{
@@ -361,101 +306,4 @@ footer{
         font-size: medium;
     }
 }
-    
- @media only screen and (max-width: 400px){
 
-
-    
-       
-       .header{
-        width: auto;
-       }
-        .div {
-            
-          display: flex;
-          position: relative;
-        }
-        .navbarjobb{
-            margin: auto;
-            width: auto;
-            align-items:center ;
-        }
-        #balo{
-            float: left;
-            position: relative;
-            display: block;
-        }
-        #jobbo{
-            float: right;  
-            position: relative;
-            display: block;
-        }
-    
-        
-        .tortenet{
-            position: relative;
-            background-color: #222222;
-            margin-bottom: 150px;
-            text-align: left;
-        }
-        .menu{
-            position: relative;
-            float: left;
-            text-align: left;
-            align-items: center;
-            
-        
-        }
-        .gpiz{
-            float: left;
-            display:block;
-            margin:0.4em auto;
-            height: auto;
-            
-           
-            
-        }
-        .gmen{
-            float: left;
-            display:block;
-            margin:0.4em auto;
-            height: auto;
-            
-            
-        }
-        .gita{
-            float: left;
-            display:block;
-            margin:0.4em auto;
-            height: auto;
-        
-        }
-       
-        .gallery{
-            
-            float: left;
-            margin: auto;
-            display: block ;
-            position: relative;
-            overflow-x:hidden ;
-        }
-        .parent{
-            display: block;
-
-        }
-        .div3{
-            display: block;
-            text-align: center;
-            float: left;
-        }
-        .div1{
-            display: block;
-        }
-     
-    }
-    @media  only screen and(max-width:350px)
-    {
-     
-    }
- 
- 
