@@ -99,6 +99,37 @@ body{
     float: right;
     
 }
+.hamburger-menu{
+    background-color: rgb(78, 77, 77);;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    gap: 5px;
+    padding-top: 10px;
+    height: 5vh;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    opacity: 0;
+    justify-content: space-evenly;
+   
+   
+  }
+  .hamburgericon{
+    gap: 5px;
+    position: relative;
+    float: right;
+    display: none;
+    flex-direction: column;
+   
+   
+   
+  }
+  .hamburger-menu a{
+    text-decoration: none;
+    color: white;
+  }
 
 footer{
     background-color: black;
@@ -225,6 +256,7 @@ a{
     font-size: 15px;
     bottom: 10%;
 }
+
 @media only screen and (max-width: 1000px) {
     .div {
 
@@ -241,45 +273,40 @@ a{
         width: 100%;
         display: block;
      }
-     .navbarjobb{
-        display: block;
+     .navbarjobb a {
+        float: none;
         width: 100%;
         position: relative;
+        text-align: right;
+        
      }
       
-      #balo{
+      .balo{
           float:left;
-          text-align: center;
-          position: relative;
           height: 100%;
-          margin: auto;
+          margin: 0%;
       }
-      #jobbo{
-        text-align: left;
-        float: left;
+      .jobbo{
+
         height: 100%;
+        margin: 0%;
          
       }
-.h1{
-    margin: 0%;
-    padding: 0%;
-}
+
 
       .tortenet{
         align-items: center;
-          position: relative;
          background-color: #222222;
-          display:flex;
+          display:block;
           margin: 0%;
           height: 100%;
           
       }
       .menu{
       
-      display: block;
+      
       background-color: black;
       height: 100%;
-      flex:70%
  
       
       }
@@ -289,13 +316,7 @@ a{
           height: 100%;
           
       }
-    .gombok{
-        display: block;
-       position: relative;
-       
 
-       
-    }
 
   
     .parent{
@@ -304,6 +325,7 @@ a{
         height: 100%;
 
     }
+  
     .footer{
         float: left;
         position: relative;
@@ -323,6 +345,76 @@ a{
     }
    
 }
+@media only screen and (max-width: 800px){
+
+    .hamburgericon{
+        gap: 5px;
+        position: relative;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+     
+       
+       
+      }
+      .hamburgericon.active .line:nth-child(1){
+          opacity: 0;
+          transition: 0.2s;
+      }
+      .hamburgericon.active .line:nth-child(2){
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburgericon.active .line:nth-child(3){
+        transform: translateY(-2px) rotate(-45deg);
+      }
+      nav a{
+        display: none;
+      }
+      .line{
+        display: block;
+      }
+      .hamburger-menu.active{
+        background-color: rgb(78, 77, 77);;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        gap: 5px;
+        padding-top: 10px;
+        height: 40vh;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        justify-content: space-evenly;
+        transition: 0.8s;
+        border-radius: 6px;
+        opacity: 1;
+       
+      }
+      .hamburger-menu a{
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      .hamburger-menu a:hover{
+        opacity: 0.7;
+        transition: 0.4s;
+        background-color: rgb(139, 136, 136);
+      }
+     
+     
+     
+      .specialitas{
+        height: fit-content;
+      }
+      .footer{
+        justify-content: flex-start;
+        column-gap: 0;
+      }
+}
+
 @media only screen and (max-width: 700px){
     .navbarjobb a {
         float: none;
@@ -331,23 +423,59 @@ a{
         text-align: right;
 
       }
-      .tortenet{
-        display: block;
-      }
-     
+    
+
+ 
+ 
+  .specialitas{
+    height: fit-content;
+  }
+  .footer{
+    justify-content: flex-start;
+    column-gap: 0;
+  }
       .gallery{
         display:block;
         background-color: #222222;
       }
+
+       .menu{
+        display: block;
+       }
+      .gombok{
+        display: block;
+        align-items: center;
+      }
       .footer{
         height: 100%;
+      }
+      .parent{
+        display: block;
+      }
+      .div1{
+        align-items: center;
+
+      }
+      .div2{
+        text-align: left;
+        float: left;
       }
 }
 @media only screen and(max-width:650px){
 .gallery{
     display: block;
 }
+.tortenet{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    
+}
 
+
+.stong{
+    display: block;
+}
 }
 @media only screen and (max-width: 450px){
   .jobbo{
@@ -362,7 +490,5 @@ a{
     margin: auto;
   }
 
-  .specialitasok{
-    display: block;
-  }
+ 
 }
